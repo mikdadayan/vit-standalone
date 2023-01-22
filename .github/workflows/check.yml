@@ -44,3 +44,11 @@ jobs:
         run: npm run build
       - name: Deploy into the host
         run: echo "deployment on process..."
+name: Issue activity
+on: issues
+jobs:
+  log_event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Event
+        run: echo ${{github.event}}
