@@ -1,6 +1,8 @@
-import { string } from 'prop-types';
+import { string } from "prop-types";
 
-import './HelpBox.css';
+import "./HelpBox.css";
+
+// comment for check skip feature
 
 function HelpBox({ title, text }) {
   return (
